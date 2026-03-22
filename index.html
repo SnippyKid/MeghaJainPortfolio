@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Megha Jain - Portfolio showcasing projects, skills, and experience">
+    <meta name="author" content="Megha Jain">
+    <title>Megha Jain | Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+    
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-line"></div>
+            <p class="loader-name">Megha Jain</p>
+        </div>
+    </div>
+    
+    <!-- Main Container -->
+    <main data-scroll-container>
+        
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <canvas id="particles-canvas"></canvas>
+            <div class="hero-content">
+                <div class="hero-subtitle" data-scroll data-scroll-speed="2">Hello, I'm</div>
+                <h1 class="hero-title" data-scroll data-scroll-speed="1">
+                    <span class="hero-name">Megha Jain</span>
+                </h1>
+                <p class="hero-tagline" data-scroll data-scroll-speed="3">
+                    <!-- EDITABLE: Add professional title -->
+                    Creative Developer & Designer
+                </p>
+                <div class="hero-cta" data-scroll data-scroll-speed="4">
+                    <a href="#contact" class="btn-primary magnetic-btn">Get In Touch</a>
+                    <a href="#projects" class="btn-secondary magnetic-btn">View Work</a>
+                </div>
+            </div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">01</span>
+                    <h2 class="section-title">About Me</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-image-wrapper">
+                        <div class="about-initials">
+                            <span class="initials-text">MJ</span>
+                            <div class="initials-circle"></div>
+                        </div>
+                        <div class="decorative-element deco-1"></div>
+                        <div class="decorative-element deco-2"></div>
+                    </div>
+                    <div class="about-text">
+                        <p class="about-intro">
+                            <!-- EDITABLE: Add personal introduction -->
+                            I'm a passionate developer and designer who loves creating beautiful, 
+                            functional digital experiences. With a keen eye for detail and a drive 
+                            for innovation, I bring ideas to life through code and creativity.
+                        </p>
+                        <p class="about-description">
+                            <!-- EDITABLE: Add more details about background -->
+                            My journey in tech has been driven by curiosity and a constant desire to learn. 
+                            I specialize in building responsive web applications with modern technologies, 
+                            always focusing on user experience and clean, maintainable code.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">02</span>
+                    <h2 class="section-title">Skills & Expertise</h2>
+                </div>
+                <div class="skills-grid">
+                    <!-- EDITABLE: Update skills as needed -->
+                    <div class="skill-card" data-skill="frontend">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="skill-title">Frontend Development</h3>
+                        <div class="skill-items">
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Vue.js</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="90"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card" data-skill="backend">
+                        <div class="skill-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3 class="skill-title">Backend Development</h3>
+                        <div class="skill-items">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Express</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="85"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card" data-skill="design">
+                        <div class="skill-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3 class="skill-title">UI/UX Design</h3>
+                        <div class="skill-items">
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Adobe XD</span>
+                            <span class="skill-tag">Photoshop</span>
+                            <span class="skill-tag">Illustrator</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="88"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-card" data-skill="tools">
+                        <div class="skill-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 class="skill-title">Tools & Technologies</h3>
+                        <div class="skill-items">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Webpack</span>
+                            <span class="skill-tag">GSAP</span>
+                        </div>
+                        <div class="skill-progress">
+                            <div class="progress-bar" data-progress="82"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container-fluid">
+                <div class="section-header">
+                    <span class="section-number">03</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
+                <div class="projects-grid">
+                    <!-- EDITABLE: Add real project details -->
+                    <div class="project-card">
+                        <div class="project-number">01</div>
+                        <div class="project-info">
+                            <h3 class="project-title">E-Commerce Platform</h3>
+                            <p class="project-description">
+                                A full-stack e-commerce solution with payment integration, 
+                                inventory management, and real-time analytics dashboard.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Stripe</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View Project">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-number">02</div>
+                        <div class="project-info">
+                            <h3 class="project-title">Task Management App</h3>
+                            <p class="project-description">
+                                Collaborative task management tool with real-time updates, 
+                                team collaboration features, and advanced filtering options.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Tailwind</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View Project">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-number">03</div>
+                        <div class="project-info">
+                            <h3 class="project-title">Portfolio Generator</h3>
+                            <p class="project-description">
+                                Dynamic portfolio generator with customizable themes, 
+                                drag-and-drop builder, and export functionality.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">GSAP</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View Project">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-number">04</div>
+                        <div class="project-info">
+                            <h3 class="project-title">Weather Dashboard</h3>
+                            <p class="project-description">
+                                Real-time weather application with location tracking, 
+                                7-day forecast, and interactive weather maps.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">API</span>
+                                <span class="tech-tag">Charts.js</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link" aria-label="View Project">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span>Live Demo</span>
+                                </a>
+                                <a href="#" class="project-link" aria-label="View Code">
+                                    <i class="fab fa-github"></i>
+                                    <span>Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">04</span>
+                    <h2 class="section-title">Experience</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-line"></div>
+                    
+                    <!-- EDITABLE: Add real experience details -->
+                    <div class="timeline-item" data-direction="left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2022 - Present</span>
+                            <h3 class="timeline-title">Senior Frontend Developer</h3>
+                            <h4 class="timeline-company">Tech Solutions Inc.</h4>
+                            <p class="timeline-description">
+                                Leading frontend development team, architecting scalable web applications, 
+                                and implementing modern design systems. Mentoring junior developers and 
+                                establishing best practices.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>React</span>
+                                <span>TypeScript</span>
+                                <span>Team Lead</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-direction="right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2020 - 2022</span>
+                            <h3 class="timeline-title">Full Stack Developer</h3>
+                            <h4 class="timeline-company">Digital Innovations Ltd.</h4>
+                            <p class="timeline-description">
+                                Developed and maintained full-stack applications, collaborated with 
+                                cross-functional teams, and implemented RESTful APIs and database solutions.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
+                                <span>Vue.js</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item" data-direction="left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2019 - 2020</span>
+                            <h3 class="timeline-title">Junior Web Developer</h3>
+                            <h4 class="timeline-company">Creative Agency Co.</h4>
+                            <p class="timeline-description">
+                                Built responsive websites and landing pages for various clients, 
+                                learned modern web development practices, and contributed to design discussions.
+                            </p>
+                            <div class="timeline-tags">
+                                <span>HTML/CSS</span>
+                                <span>JavaScript</span>
+                                <span>WordPress</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header centered">
+                    <span class="section-number">05</span>
+                    <h2 class="section-title">Let's Create Together</h2>
+                    <p class="section-subtitle">
+                        Have a project in mind or want to collaborate? I'd love to hear from you!
+                    </p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <!-- EDITABLE: Add real contact information -->
+                        <a href="mailto:megha.jain@example.com" class="contact-email magnetic-btn">
+                            <i class="fas fa-envelope"></i>
+                            megha.jain@example.com
+                        </a>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/megha-jain/" target="_blank" rel="noopener noreferrer" class="social-link magnetic-btn" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link magnetic-btn" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-link magnetic-btn" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="social-link magnetic-btn" aria-label="Dribbble">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <p>&copy; 2025 Megha Jain</p>
+            </footer>
+        </section>
+        
+    </main>
+    
+    <!-- GSAP Core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- GSAP ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
